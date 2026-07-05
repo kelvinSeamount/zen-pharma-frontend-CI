@@ -7,7 +7,7 @@ import DrugCatalog from './pages/DrugCatalog';
 import Inventory from './pages/Inventory';
 import Manufacturing from './pages/Manufacturing';
 import QualityControl from './pages/QualityControl';
-import Suppliers from './pages/Suppliers';
+import Suppliers from './pages/Supplier';
 import Distribution from './pages/Distribution';
 import Reports from './pages/Reports';
 import Login from './pages/Login';
