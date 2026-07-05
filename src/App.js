@@ -9,7 +9,7 @@ import Manufacturing from './pages/Manufacturing';
 import QualityControl from './pages/QualityControl';
 import Suppliers from './pages/Supplier';
 import Distribution from './pages/Distribution';
-import Reports from './pages/Reports';
+import Reports from './pages/Report';
 import Login from './pages/Login';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
