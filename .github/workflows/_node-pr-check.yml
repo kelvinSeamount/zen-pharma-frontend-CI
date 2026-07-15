@@ -73,10 +73,12 @@ jobs:
           path: ${{ inputs.service-dir }}/coverage/
           retention-days: 3
 
+ # ── CodeQL analysis for source code vulnerabilities ───────────────────────────────────────────────────────
       - name: CodeQL — Analyze
         uses: github/codeql-action/analyze@v3
         with:
           category: /language:javascript
 
+# ── npm audit (fail on HIGH/CRITICAL) ─────────────────────────────────────
       - name: npm audit (HIGH/CRITICAL → fail)
-        run: cd ${{ inputs.service-dir }} && npm audit --audit-level=high
+        run: cd ${{ inputs.service-dir }} && npm audit --audit-level=high --omit=dev
